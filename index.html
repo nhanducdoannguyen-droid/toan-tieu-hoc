@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Toán Tiểu Học Thông Minh - Nền tảng luyện Toán tương tác cho học sinh lớp 1-5. Gamification, huy hiệu, chấm điểm tức thì." />
+  <meta name="keywords" content="toán tiểu học, luyện toán, lớp 1, lớp 2, lớp 3, lớp 4, lớp 5, gamification" />
+  <meta name="robots" content="index, follow" />
+  <title>Toán Tiểu Học Thông Minh 🦉 | Luyện Toán Lớp 1-5</title>
+
+  <!-- KaTeX for Math Rendering -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="navbar-brand" onclick="location.hash='#/'">
+      <span class="navbar-logo">🦉</span>
+      <span class="navbar-title">Toán Thông Minh</span>
+    </div>
+    <div class="navbar-nav" id="navbar-right">
+      <!-- Dynamic: rendered by App.updateNavbar() -->
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="main-container">
+    <div id="app">
+      <!-- SPA content rendered here by app.js -->
+      <div style="text-align:center;padding:80px 20px;">
+        <div style="font-size:4rem;margin-bottom:16px;">🦉</div>
+        <div style="font-size:1.2rem;color:#636E72;">Đang tải...</div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Confetti Canvas -->
+  <canvas id="confetti-canvas"></canvas>
+
+  <!-- Safety Footer -->
+  <footer class="safety-footer">
+    <span>🔒 Môi trường học tập an toàn — Không quảng cáo — Dữ liệu được lưu trữ cục bộ</span>
+  </footer>
+
+  <!-- Scripts (order matters) -->
+  <script src="js/data.js"></script>
+  <script src="js/account.js"></script>
+  <script src="js/badges.js"></script>
+  <script src="js/quiz.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
